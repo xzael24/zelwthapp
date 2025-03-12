@@ -1,0 +1,73 @@
+/* Default Light Mode */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+.weather-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .weather-container {
+    background: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Tombol Switch Mode */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+body.dark .theme-toggle {
+    color: white;
+}
